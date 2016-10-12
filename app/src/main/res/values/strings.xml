@@ -10,11 +10,15 @@
         <item>CAD</item>
     </string-array>
 
-    <string name="USD">1.11554</string>
-    <string name="GBP">0.90007</string>
-    <string name="JPY">115.611</string>
-    <string name="AUS">1.46480</string>
-    <string name="CAD">1.46788</string>
+    <string-array name="convert_values">
+        <item>1.11554</item>
+        <item>1.0</item>
+        <item>0.90007</item>
+        <item>115.611</item>
+        <item>1.46480</item>
+        <item>1.46788</item>
+    </string-array>
+
 
     <string name="convert">Convert</string>
 </resources>
