@@ -1,24 +1,7 @@
 <resources>
     <string name="app_name">NEM_assignement01</string>
-    <string name="title">Currency converter</string>
-    <string-array name="currencies">
-        <item>USD</item>
-        <item>EUR</item>
-        <item>GBP</item>
-        <item>JPY</item>
-        <item>AUD</item>
-        <item>CAD</item>
-    </string-array>
-
-    <string-array name="convert_values">
-        <item>1.11554</item>
-        <item>1.0</item>
-        <item>0.90007</item>
-        <item>115.611</item>
-        <item>1.46480</item>
-        <item>1.46788</item>
-    </string-array>
+    <string name="title">To-Do list</string>
 
 
-    <string name="convert">Convert</string>
+    <string name="add">Add</string>
 </resources>
