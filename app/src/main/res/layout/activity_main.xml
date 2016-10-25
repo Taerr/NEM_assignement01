@@ -33,20 +33,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:layout_weight="1.5"/>
+            android:layout_weight="1"/>
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5">
+            android:layout_weight="0"
+            android:layout_marginLeft="16dp">
 
             <Button
                 android:layout_gravity="center"
                 android:onClick="buttonPress"
                 android:id="@+id/btn_add"
                 android:text="@string/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </FrameLayout>
 
 

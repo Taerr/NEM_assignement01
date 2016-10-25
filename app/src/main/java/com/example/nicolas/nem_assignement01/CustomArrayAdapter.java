@@ -55,6 +55,7 @@ public class CustomArrayAdapter extends BaseAdapter {
 
         holder.tv.setText(al_items.get(position).getName());
         holder.cb.setChecked(al_items.get(position).getCheck());
+        holder.cb.setTag(position);
 
         return convert_view;
     }
@@ -67,8 +68,7 @@ public class CustomArrayAdapter extends BaseAdapter {
         return position;
     }
 
-    public Object getItem (int position){
+    public CustomItem getItem (int position){
         return al_items.get(position);
     }
-
 }
