@@ -33,13 +33,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:hint="New item"/>
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:layout_marginLeft="16dp">
+            android:layout_marginStart="16dp">
 
             <Button
                 android:layout_gravity="center"
@@ -55,7 +56,10 @@
 
     <ListView
         android:id="@+id/listview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"/>
 
 </LinearLayout>

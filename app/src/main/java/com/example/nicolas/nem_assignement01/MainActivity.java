@@ -52,23 +52,21 @@ public class MainActivity extends AppCompatActivity {
         caa.notifyDataSetChanged();
 
 
-        //set the listener
+        //set the longClick
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "Item Deleted", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Item Deleted", Toast.LENGTH_SHORT).show();
                 arrayList.remove(arrayList.get(position));
                 caa.notifyDataSetChanged();
                 return true;
             }
         });
 
-        //doesn't work ???
         /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(MainActivity.this, "Item clicked", Toast.LENGTH_LONG).show();
-                Log.d("oinj","oubn");
             }
         });*/
 
@@ -76,14 +74,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void buttonPress (View arg0){
-        Log.d("ButtonPress", "Add new item");
         String name = editText.getText().toString();
 
         if (name.compareTo("") != 0){
             editText.setText("");
-
             arrayList.add(new CustomItem(name, false));
             caa.notifyDataSetChanged();
+            Toast.makeText(MainActivity.this, "Item Added", Toast.LENGTH_SHORT).show();
         }
     }
 

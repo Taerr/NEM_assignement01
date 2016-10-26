@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -45,6 +46,7 @@ public class CustomArrayAdapter extends BaseAdapter {
 
             holder.tv = (TextView) convert_view.findViewById(R.id.tv);
             holder.cb = (CheckBox) convert_view.findViewById(R.id.cb);
+
 
             convert_view.setTag(holder);
         }
